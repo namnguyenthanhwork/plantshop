@@ -190,7 +190,7 @@
 /* Tablet & PC low resolution */
 @media (min-width: 992px) and (max-width: 1199px) {
     .container {
-        width: 960px;
+        width: 940px;
         margin: 0 auto;
     }
 
@@ -341,7 +341,7 @@
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
-        max-width: 720px;
+        max-width: 700px;
         margin: 0 auto;
     }
 
@@ -482,7 +482,7 @@
 /* Landscape mobile */
 @media (min-width: 576px) and (max-width: 767px) {
     .container {
-        width: 540px;
+        width: 530px;
         margin: 0 auto;
     }
 

@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
 
 :root {
     --primary: #abd373;
-    --secondary: #ed4747;
+    --secondary: #02b322;
+    --heard: #e72838;
     --white: #fff;
     --gray: #8d94a7;
     --shadow: #7f89a19a;
@@ -38,7 +38,6 @@ body {
     color: var(--text);
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    overflow-x: hidden
 }
 
 ul li {
