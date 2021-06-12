@@ -6,7 +6,14 @@
 /*-----------------------------------
 <= Tablet resolution 
 -----------------------------------*/
-@media (max-width: 1199px) {}
+@media (max-width: 1199px) {
+
+    /* navbar */
+    .navbar {
+        padding: 5px 15px;
+    }
+
+}
 
 @media (max-width: 991px) {
 
@@ -33,6 +40,26 @@
         content: "\f00d";
     }
 
+    /* our product */
+    h1.headline {
+        font-size: 30px
+    }
+
+    .collection-items--big {
+        white-space: nowrap;
+    }
+
+    .collection-items--big h1 {
+        font-size: 22px;
+    }
+
+    .collection-items--small h1 {
+        font-size: 18px;
+    }
+
+    .collection-items p {
+        font-size: 14px;
+    }
 
     /* footer */
     .footer {
@@ -44,18 +71,73 @@
 /*------------------------------------
     Tablet
 ----------------------------------*/
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* our prodcut */
+    .product-items:hover a {
+        left: 20%;
+    }
+
+    .collection-items .btn-order {
+        padding: 5px 0;
+        width: 140px;
+    }
+}
 
 /*------------------------------------
     Mobile & Mobile landscape
 ----------------------------------*/
 @media (max-width: 767px) {
-    .navbar {
-        padding: 0 10px;
-    }
 
+    /* navbar */
     .navbar-mobile {
         width: 60%;
+    }
+
+    /* banner */
+    .banner-items .row {
+        flex-direction: column-reverse;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .btn-order {
+        margin: 20px auto 0;
+    }
+
+    /* our product */
+    h1.headline {
+        font-size: 25px;
+    }
+
+    .nav-product li {
+        margin: 10px;
+        width: 100px;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .product-items a {
+        top: 7%;
+        font-size: 12px;
+        width: 70px;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    .product-items:hover a {
+        left: 27%;
+    }
+
+    .collection-items .btn-order {
+        padding: 5px 0;
+        width: 135px;
+    }
+
+    .collection-items--big {
+        left: 50%;
     }
 }
 

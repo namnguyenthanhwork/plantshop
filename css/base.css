@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
 
 :root {
     --primary: #abd373;
-    --secondary: #02b322;
+    --secondary: #259b3bd8;
     --heard: #e72838;
     --white: #fff;
     --gray: #8d94a7;
@@ -11,14 +11,8 @@
     --text: #222;
     --text-light: #aab1b7;
     --yellow: #FDAE5C;
-    --where-u-go: #040E27;
-    --fill: #25304b;
-    --destination-items: linear-gradient(to bottom, rgba(4, 14, 39, 0) 0%, rgba(4, 14, 39, 0.7) 100%);
-    --price: #1EC6B6;
-    --video: #1EC6B6;
-    --place-hv: #0000009a;
-    --nav-portfolio: #cee5fdc7;
-    --footer: #040E27;
+    --overlay: rgba(19, 39, 57, 0.8);
+    --nav-product: #259b3bd8;
 }
 
 * {
@@ -51,6 +45,6 @@ a {
 }
 
 h1 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Charm', cursive;
     font-weight: bold;
 }

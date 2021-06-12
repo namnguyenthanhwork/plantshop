@@ -27,12 +27,13 @@
 
     <!-- Main Stylesheet File -->
     <link rel="shortcut icon" href="./img/favicon.ico" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reponsive.css">
 
     <!-- Libraries CSS Files -->
     <link rel="stylesheet" href="./lib/animate/animate.min.css">
+    <link rel="stylesheet" href="./lib/lightbox/css/lightbox.min.css">
     <link rel="stylesheet" href="./css/loader.css">
 </head>
 
@@ -44,6 +45,7 @@
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
+
     <!-- Header page -->
     <header id="header" class="header">
         <nav class="navbar container">
@@ -56,7 +58,7 @@
                 <ul>
                     <li><a href="index.html" class="active">Trang Chủ</a></li>
                     <li><a href="shop.html">Cửa Hàng</a></li>
-                    <li><a href="about.html">Về Chúng Tôi</a></li>
+                    <li><a href="about.html">Giới Thiệu</a></li>
                     <li><a href="contact.html">Liên Hệ</a></li>
                 </ul>
             </div>
@@ -77,7 +79,7 @@
             <ul>
                 <li><a href="index.html" class="active">Trang Chủ</a></li>
                 <li><a href="shop.html">Cửa Hàng</a></li>
-                <li><a href="about.html">Về Chúng Tôi</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
                 <li><a href="contact.html">Liên Hệ</a></li>
             </ul>
         </div>
@@ -88,35 +90,451 @@
     <div class="banner">
         <div class="owl-carousel banner-list">
             <div class="banner-items">
-                <img src="" alt="">
-                <div class="banner-content">
-                    <h1>Hang Sơn Đoòng</h1>
-                    <p>Cùng nhau khám phá và có nhưng trải nghiệm thú vị tại nơi đây</p>
-                    <a href="" class="btn-booking">Đặt Ngay Thôi</a>
+                <div class="row">
+                    <div class="banner-content col l-4 ml-4 m-5 sm-9 s-9">
+                        <h1>Cây Mới</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatibus
+                        </p>
+                        <a href="javascript:;" class="btn-order">Đặt Ngay Thôi</a>
+                    </div>
+                    <div class="banner-img col l-3 ml-4 m-5 sm-9 s-9">
+                        <img src="./img/banner/banner-1.png" alt="banner">
+                    </div>
                 </div>
             </div>
             <div class="banner-items">
-                <img src="" alt="">
-                <div class="banner-content">
-                    <h1>Vịnh Hạ Long</h1>
-                    <p>Cùng nhau khám phá và có nhưng trải nghiệm thú vị tại nơi đây</p><a href=""
-                        class="btn-booking">Đặt Ngay Thôi</a>
-                </div>
-            </div>
-            <div class="banner-items">
-                <img src="" alt="">
-                <div class="banner-content">
-                    <h1>Vũng Tàu</h1>
-                    <p>Cùng nhau khám phá và có nhưng trải nghiệm thú vị tại nơi đây</p> <a href=""
-                        class="btn-booking">Đặt Ngay Thôi</a>
+                <div class="row">
+                    <div class="banner-content col l-4 ml-4 m-4 sm-9 s-9">
+                        <h1>Cây Mới</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatibus
+                        </p>
+                        <a href="javascript:;" class="btn-order">Đặt Ngay Thôi</a>
+                    </div>
+                    <div class="banner-img col l-3 ml-4 m-5 sm-9 s-9">
+                        <img src="./img/banner/banner-2.png" alt="banner">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Shipping -->
+    <section class="shipping">
+        <div class="container">
+            <div class="row shipping-list">
+                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow fadeInUp">
+                    <div class="shipping-items">
+                        <img src="./img/shipping/car.png" alt="car">
+                        <div class="shipping-items_content">
+                            <h3>Miễn Phí Vận Chuyển</h3>
+                            <p>Giới hạn 5tr mỗi đơn đặt hàng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow fadeInUp">
+                    <div class="shipping-items">
+                        <img src="./img/shipping/card.png" alt="card">
+                        <div class="shipping-items_content">
+                            <h3>Thanh Toán An Toàn</h3>
+                            <p>Với cổng thanh toán của chúng tôi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-4 ml-4 m-6 sm-12 s-12 wow fadeInUp">
+                    <div class="shipping-items">
+                        <img src="./img/shipping/service.png" alt="services">
+                        <div class="shipping-items_content">
+                            <h3>Dịch Vụ Tốt Nhất</h3>
+                            <p>Thân thiện với khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Our Products -->
+    <section class="our-products">
+        <div class="container">
+            <div class="intro">
+                <h1 class="headline">Sản Phẩm</h1>
+            </div>
+            <!-- nav -->
+            <div class="nav-product">
+                <ul class="product-filters">
+                    <li data-filter="*" class="active">Tất Cả</li>
+                    <li data-filter=".filter-featured">Bán Chạy
+                        <img src="./img/product/gif/hot.gif" alt="hot">
+                    </li>
+                    <li data-filter=".filter-seller">Giảm Giá
+                        <img src="./img/product/gif/sale.gif" alt="sale">
+                    </li>
+                    <li data-filter=".filter-latest">Hàng Mới
+                        <img src="./img/product/gif/new.gif" alt="new">
+                    </li>
+                </ul>
+            </div>
+            <!-- product list -->
+            <div class="row product-list">
+                <div class="col l-3 ml-4 m-4 sm-6 s-6 product-item_filter filter-featured">
+                    <div class="product-items">
+                        <div class="product-items_img">
+                            <img src="./img/product/new-product/new-1.jpg" alt="item-1">
+                            <a href="./img/product/items/item-1.jpg" data-lightbox="item"
+                                data-title="American Marigold">
+                                Chi Tiết <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="product-items_content">
+                            <p class="name">American Marigold</p>
+                            <p class="price">100,000 vnđ</p>
+                            <p class="review">
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col l-3 ml-4 m-4 sm-6 s-6 product-item_filter filter-seller">
+                    <div class="product-items">
+                        <div class="product-items_img">
+                            <img src="./img/product/items/item-2.jpg" alt="item-2">
+                            <a href="./img/product/items/item-2.jpg" data-lightbox="item" data-title="Black Eyed Susan">
+                                Chi Tiết <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="product-items_content">
+                            <p class="name">Black Eyed Susan</p>
+                            <p class="price">300,000 vnđ</p>
+                            <p class="review">
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 ml-4 m-4 sm-6 s-6 product-item_filter filter-featured">
+                    <div class="product-items">
+                        <div class="product-items_img">
+                            <img src="./img/product/items/item-3.jpg" alt="item-3">
+                            <a href="./img/product/items/item-3.jpg" data-lightbox="item" data-title="Bleeding Heart">
+                                Chi Tiết <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="product-items_content">
+                            <p class="name">Bleeding Heart</p>
+                            <p class="price">100,000 vnđ</p>
+                            <p class="review">
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 ml-4 m-4 sm-6 s-6 product-item_filter filter-latest">
+                    <div class="product-items">
+                        <div class="product-items_img">
+                            <img src="./img/product/items/item-4.jpg" alt="item-4">
+                            <a href="./img/product/items/item-4.jpg" data-lightbox="item"
+                                data-title="Bloody Cranesbill">
+                                Chi Tiết <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="product-items_content">
+                            <p class="name">Bloody Cranesbill</p>
+                            <p class="price">100,000 vnđ</p>
+                            <p class="review">
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 ml-4 m-4 sm-6 s-6 product-item_filter filter-seller">
+                    <div class="product-items">
+                        <div class="product-items_img">
+                            <img src="./img/product/items/item-5.jpg" alt="item-5">
+                            <a href="./img/product/items/item-5.jpg" data-lightbox="item" data-title="Butterfly Weed">
+                                Chi Tiết <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="product-items_content">
+                            <p class="name">Butterfly Weed</p>
+                            <p class="price">100,000 vnđ</p>
+                            <p class="review">
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 ml-4 m-4 sm-6 s-6 product-item_filter filter-featured">
+                    <div class="product-items">
+                        <div class="product-items_img">
+                            <img src="./img/product/items/item-6.jpg" alt="item-6">
+                            <a href="./img/product/items/item-6.jpg" data-lightbox="item" data-title="Common Yarrow">
+                                Chi Tiết <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="product-items_content">
+                            <p class="name">Common Yarrow</p>
+                            <p class="price">100,000 vnđ</p>
+                            <p class="review">
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 ml-4 m-4 sm-6 s-6 product-item_filter filter-seller">
+                    <div class="product-items">
+                        <div class="product-items_img">
+                            <img src="./img/product/items/item-7.jpg" alt="item-7">
+                            <a href="./img/product/items/item-7.jpg" data-lightbox="item"
+                                data-title="Doublefile Viburnum">
+                                Chi Tiết <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="product-items_content">
+                            <p class="name">Doublefile Viburnum</p>
+                            <p class="price">100,000 vnđ</p>
+                            <p class="review">
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 ml-4 m-4 sm-6 s-6 product-item_filter filter-latest">
+                    <div class="product-items">
+                        <div class="product-items_img">
+                            <img src="./img/product/items/item-8.jpg" alt="item-8">
+                            <a href="./img/product/items/item-8.jpg" data-lightbox="item"
+                                data-title="Feather Reed Grass">
+                                Chi Tiết <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="product-items_content">
+                            <p class="name">Feather Reed Grass</p>
+                            <p class="price">100,000 vnđ</p>
+                            <p class="review">
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ads product -->
+            <div class="row ads-products">
+                <div class="col l-8 ml-8 m-8 sm-12 s-12 collection">
+                    <div class="collection-wrap">
+                        <img src="./img/product/ads/ads-1.jpg" alt="ads">
+                        <div class="col l-6 ml-6 m-6 sm-12 s-12 collection-items collection-items--big">
+                            <p>Banner Image Collection Of Cactus</p>
+                            <h1>Pottery Pots & Plant</h1>
+                            <a href="javascript:;" class="btn-order">Đặt Hàng Ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-4 ml-4 m-4 sm-12 s-12 collection">
+                    <div class="collection-wrap">
+                        <img src="./img/product/ads/ads-2.jpg" alt="ads">
+                        <div class="collection-items collection-items--small">
+                            <p>Banner Image Collection Of Cactus</p>
+                            <h1>Pottery Pots & Plant</h1>
+                            <a href="javascript:;" class="btn-order">Đặt Hàng Ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-4 ml-4 m-4 sm-12 s-12 collection">
+                    <div class="collection-wrap">
+                        <img src="./img/product/ads/ads-3.jpg" alt="ads">
+                        <div class="collection-items collection-items--small">
+                            <p>Banner Image Collection Of Cactus</p>
+                            <h1>Pottery Pots & Plant</h1>
+                            <a href="javascript:;" class="btn-order">Đặt Hàng Ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-8 ml-8 m-8 sm-12 s-12 collection">
+                    <div class="collection-wrap">
+                        <img src="./img/product/ads/ads-4.jpg" alt="ads">
+                        <div class="col l-6 ml-6 m-6 sm-12 s-12 collection-items collection-items--big">
+                            <p>Banner Image Collection Of Cactus</p>
+                            <h1>Pottery Pots & Plant</h1>
+                            <a href="javascript:;" class="btn-order">Đặt Hàng Ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Products -->
+    <section class="new-products">
+        <div class="container">
+            <div class="intro">
+                <h1 class="headline">Sản Phẩm Mới</h1>
+                <p>Những sản phẩm mới nhập về cửa hàng</p>
+            </div>
+            <div class="row ">
+                <div class="col l-3 ml-4 m-4 sm-6 s-6">
+                    <div class="product-items">
+                        <div class="product-items_img">
+                            <img src="./img/product/new-product/new-1.jpg" alt="item-1">
+                            <a href="./img/product/new-product/new-1.jpg" data-lightbox="new-item"
+                                data-title="American Marigold">
+                                Chi Tiết <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="product-items_content">
+                            <p class="name">American Marigold</p>
+                            <p class="price">100,000 vnđ</p>
+                            <p class="review">
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col l-3 ml-4 m-4 sm-6 s-6">
+                    <div class="product-items">
+                        <div class="product-items_img">
+                            <img src="./img/product/new-product/new-2.jpg" alt="item-2">
+                            <a href="./img/product/new-product/new-2.jpg" data-lightbox="new-item"
+                                data-title="Black Eyed Susan">
+                                Chi Tiết <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="product-items_content">
+                            <p class="name">Black Eyed Susan</p>
+                            <p class="price">300,000 vnđ</p>
+                            <p class="review">
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 ml-4 m-4 sm-6 s-6">
+                    <div class="product-items">
+                        <div class="product-items_img">
+                            <img src="./img/product/new-product/new-3.jpg" alt="item-3">
+                            <a href="./img/product/new-product/new-3.jpg" data-lightbox="new-item"
+                                data-title="Bleeding Heart">
+                                Chi Tiết <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="product-items_content">
+                            <p class="name">Bleeding Heart</p>
+                            <p class="price">100,000 vnđ</p>
+                            <p class="review">
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-3 ml-4 m-4 sm-6 s-6">
+                    <div class="product-items">
+                        <div class="product-items_img">
+                            <img src="./img/product/new-product/new-4.png" alt="item-4">
+                            <a href="./img/product/new-product/new-4.png" data-lightbox="new-item"
+                                data-title="Bloody Cranesbill">
+                                Chi Tiết <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="product-items_content">
+                            <p class="name">Bloody Cranesbill</p>
+                            <p class="price">100,000 vnđ</p>
+                            <p class="review">
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
     <!-- Testimonial -->
-    <section class="testimonials">
+    <!-- <section class="testimonials">
         <div class="container">
             <div class="title">
                 <h1>Nhận xét</h1>
@@ -172,7 +590,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -258,13 +676,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./lib/wowjs/wow.min.js"></script>
+    <script src="./lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="./lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Main JS -->
     <script src="js/main.js"></script>
 
     <!-- Load Facebook SDK for JavaScript -->
     <!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
+    <!-- <div id="fb-root"></div>
     <script>
         window.fbAsyncInit = function () {
             FB.init({
@@ -281,11 +701,11 @@
             js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-    </script>
+    </script> -->
 
     <!-- Your Chat plugin code -->
-    <div class="fb-customerchat" attribution="page_inbox" page_id="105825651245887">
-    </div>
+    <!-- <div class="fb-customerchat" attribution="page_inbox" page_id="105825651245887">
+    </div> -->
 </body>
 
 </html>

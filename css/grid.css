@@ -341,7 +341,7 @@
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
-        max-width: 700px;
+        max-width: 720px;
         margin: 0 auto;
     }
 

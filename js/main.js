@@ -6,40 +6,17 @@ $(document).ready(function () {
                 $(this).remove();
             });
         }
-        // // places isotope and filter 
-        // var portfolioIsotope = $('.place-list').isotope({
-        //     itemSelector: '.place-items_filter'
-        // });
-        // // // filter functions
-        // var filterFns = {
-        //     numberGreaterThan500: function () {
-        //         var number = $(this).find('.price').text();
-        //         return parseInt(number, 10) <= 500;
-        //     },
-        //     numberGreaterThan1000: function () {
-        //         var number = $(this).find('.price').text();
-        //         return parseInt(number, 10) <= 1000;
-        //     },
-        //     numberGreaterThan1500: function () {
-        //         var number = $(this).find('.price').text();
-        //         return parseInt(number, 10) <= 1500;
-        //     },
-        //     numberGreaterThan2000: function () {
-        //         var number = $(this).find('.price').text();
-        //         return parseInt(number, 10) <= 2000;
-        //     },
-
-        // };
-        // $('#places-filters').on('change', function () {
-        //     // get filter value from option value
-        //     var filterValue = this.value;
-        //     // use filterFn if matches value
-        //     filterValue = filterFns[filterValue] || filterValue;
-        //     portfolioIsotope.isotope({
-        //         filter: filterValue
-        //     });
-        // });
-
+        //product isotope and filter 
+        var productIsotope = $('.product-list').isotope({
+            itemSelector: '.product-item_filter'
+        });
+        $('.product-filters li').on('click', function () {
+            $(".product-filters li").removeClass('active');
+            $(this).addClass('active');
+            productIsotope.isotope({
+                filter: $(this).data('filter')
+            });
+        });
     });
     // scroll back
     $(window).scroll(function () {
@@ -64,7 +41,7 @@ $(document).ready(function () {
     wow = new WOW({
         boxClass: 'wow', // default
         animateClass: 'animated', // default
-        offset: 80, // default
+        offset: 100, // default
         mobile: true, // default
         live: true // default
     })
@@ -73,8 +50,8 @@ $(document).ready(function () {
     // carousel
     $(".banner-list").owlCarousel({
             autoplayTimeout: 3e3,
-            autoplaySpeed: 1500,
-            margin: 20,
+            autoplaySpeed: 2000,
+            margin: 0,
             loop: !0,
             nav: true,
             autoplay: true,
