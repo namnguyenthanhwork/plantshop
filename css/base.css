@@ -9,10 +9,11 @@
     --shadow: #7f89a19a;
     --black: #000;
     --text: #222;
-    --text-light: #aab1b7;
+    --text-light: #706f6f;
     --yellow: #FDAE5C;
     --overlay: rgba(19, 39, 57, 0.8);
     --nav-product: #259b3bd8;
+    --testimonial-bg: #dcdcdc;
 }
 
 * {

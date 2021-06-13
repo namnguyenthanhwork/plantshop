@@ -398,7 +398,7 @@ h1.headline {
     position: relative;
     display: inline-block;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 
 }
 
@@ -650,6 +650,164 @@ h1.headline::after {
 }
 
 /* ----------------
+    Testimonial
+------------------- */
+.testimonials {
+    background: url(../img/testimonial/testimonial-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.testimonials-items {
+    position: relative;
+
+    height: 250px;
+    padding: 20px 30px;
+
+    background: var(--testimonial-bg);
+    overflow: hidden;
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.testimonials-items::before {
+    content: url(../img/testimonial/quotation.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    text-align: center;
+    padding-left: 15px;
+    background: var(--primary);
+
+    width: 85px;
+    height: 85px;
+    line-height: 85px;
+    border-bottom-left-radius: 100%;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.testimonials-items:hover::before {
+    background: var(--secondary);
+}
+
+.testimonials-items_img {
+    width: 70px;
+    height: auto;
+    padding: 0 0 5px;
+}
+
+.testimonials-items_img img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.testimonials-items_info h4 {
+    padding: 0 0 10px;
+    color: var(--text-light);
+}
+
+.testimonials .owl-nav,
+.testimonials .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.testimonials .owl-carousel button.owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+    background: var(--primary);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.testimonials button.owl-dot.active {
+    background: var(--secondary);
+}
+
+/* ----------------
+    Brand
+------------------- */
+.brand .container {
+    background: url(../img/brand/brand-bg.jpg) no-repeat;
+    background-size: cover;
+
+    padding: 70px;
+    overflow: hidden;
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.brand-items img {
+    margin: 0 auto;
+    width: unset !important;
+}
+
+/* ----------------
+    Lastest Blog
+------------------- */
+.blog-items {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.blog-items:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px var(--shadow);
+}
+
+.blog-items img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-items_content {
+    padding: 10px;
+}
+
+.blog-items_content p {
+    text-align: left;
+    color: var(--primary);
+}
+
+.blog-items_content h3 {
+    text-align: left;
+}
+
+/* ----------------
     Video
 ------------------- */
 .video {
@@ -728,67 +886,6 @@ h1.headline::after {
 .play-video i {
     position: relative;
     z-index: 9;
-}
-
-/* ----------------
-    Testimonials
-------------------- */
-.testimonials {
-    background: var(--nav-portfolio);
-    box-shadow: 0 0 10px var(--shadow-color);
-}
-
-.testimonials .row {
-    justify-content: center;
-}
-
-.testimonials-items_img {
-    width: 150px;
-    height: auto;
-    margin: 0 auto;
-}
-
-.testimonials-items_img img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
-.testimonials-items_info {
-    text-align: center;
-}
-
-.testimonials-items_info h4 {
-    color: var(--text-light);
-}
-
-.testimonials .owl-nav,
-.testimonials .owl-dots {
-    margin-top: 5px;
-    text-align: center;
-}
-
-.testimonials .owl-carousel button.owl-dot {
-    display: inline-block;
-    margin: 0 5px;
-    width: 12px;
-    height: 12px;
-
-    border-radius: 50%;
-    background: var(--primary);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
-.testimonials button.owl-dot.active {
-    background: var(--secondary);
 }
 
 /* ----------------

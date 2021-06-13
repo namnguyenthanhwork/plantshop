@@ -59,7 +59,7 @@ $(document).ready(function () {
             loop: true,
             items: 1
         }),
-        $(" .testimonials-carousel").owlCarousel({
+        $(".testimonials-carousel").owlCarousel({
             autoplayTimeout: 3e3,
             autoplaySpeed: 1500,
             margin: 20,
@@ -68,6 +68,40 @@ $(document).ready(function () {
             autoplay: true,
             dots: true,
             loop: true,
-            items: 1
-        })
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                }
+            }
+        }),
+        $(".brand-list").owlCarousel({
+            autoplayTimeout: 3e3,
+            autoplaySpeed: 1500,
+            margin: 20,
+            loop: !0,
+            nav: false,
+            autoplay: true,
+            dots: false,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                },
+                992: {
+                    items: 4
+                },
+                1200: {
+                    items: 5
+                }
+            }
+        });
 });

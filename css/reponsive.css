@@ -88,6 +88,9 @@
     Mobile & Mobile landscape
 ----------------------------------*/
 @media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
 
     /* navbar */
     .navbar-mobile {
@@ -131,6 +134,10 @@
         left: 27%;
     }
 
+    .collection-items {
+        white-space: nowrap;
+    }
+
     .collection-items .btn-order {
         padding: 5px 0;
         width: 135px;
@@ -138,6 +145,16 @@
 
     .collection-items--big {
         left: 50%;
+    }
+
+    /* testimonials */
+    .testimonials-items_img {
+        width: 60px;
+    }
+
+    /* Lastest Blog */
+    .blog-items {
+        padding: 20px;
     }
 }
 
